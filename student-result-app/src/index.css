@@ -1,0 +1,101 @@
+:root{
+  --bg: #485e8a;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --primary-600: #1e40af;
+  --danger: #ef4444;
+  --surface-shadow: 0 6px 18px rgba(32,33,36,0.08);
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, #000000 0%, var(--bg) 100%);
+  color: #111827;
+  -webkit-font-smoothing:antialiased;
+}
+
+.app{
+  max-width: 1000px;
+  margin: 36px auto;
+  padding: 20px;
+}
+
+.app-header{
+  background: linear-gradient(90deg,rgba(99,102,241,0.9), rgba(16, 39, 90, 0.9) );
+  color: white;
+  padding: 18px 22px;
+  border-radius: 10px;
+  box-shadow: var(--surface-shadow);
+}
+
+.card{
+  background: var(--card);
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 18px;
+  box-shadow: var(--surface-shadow);
+}
+
+.toolbar{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+.btn{
+  background: white;
+  border: 1px solid #e6e9ef;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight:600;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{
+  background: linear-gradient(180deg,var(--primary),var(--primary-600));
+  color: white;
+  border: none;
+}
+.btn-danger{
+  background: linear-gradient(180deg,#d81930,#fb7185);
+  color:white;
+  border:none;
+}
+
+.students-table{
+  width:100%;
+  border-collapse:collapse;
+}
+.students-table th, .students-table td{
+  text-align:left;
+  padding:12px 10px;
+  border-bottom:1px solid #eef2ff;
+}
+.students-table thead th{
+  font-size:13px;
+  color:var(--muted);
+  background:transparent;
+}
+
+.empty{
+  padding:16px;
+  color:var(--muted);
+}
+
+.form-row{display:flex;gap:12px;margin-top:10px}
+.form-field{flex:1;display:flex;flex-direction:column}
+.form-field label{font-size:13px;color:var(--muted);margin-bottom:6px}
+.form-field input{padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+.form-actions{margin-top:16px;display:flex;gap:10px}
+
+.details-row{margin-top:8px;padding:8px 0}
+
+@media (max-width:700px){
+  .form-row{flex-direction:column}
+  .app{margin:18px}
+}
