@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "name": "Vatsal",
+      "section": "D",
+      "marks": "99",
+      "grade": "O",
+      "id": 1
+    },
+    {
+      "name": "Ayushman",
+      "section": "D",
+      "marks": "100",
+      "grade": "O",
+      "id": 2
+    },
+    {
+      "name": "Sparsh Agarwal",
+      "section": "D",
+      "marks": "97",
+      "grade": "O",
+      "id": 3
+    },
+    {
+      "name": "Abhiyansh Varshney",
+      "section": "D",
+      "marks": "99",
+      "grade": "O",
+      "id": 4
+    }
+  ]
+}
